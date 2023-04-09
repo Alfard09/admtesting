@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page with Background Image Example</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<script>
+  function validateform(){
+    var email = document.getElementById("emailTest").value;
+    var password = document.getElementById("passwordTest").value;
+
+    if(email == "xyz@gmail.com" && password == "12345"){
+      return true;
+     
+    }
+    else{
+      alert("Wrong email/password!!!");
+    }
+  }
+</script>
+<body>
+
+<div id="bg"></div>
+
+<form onsubmit="validateform()" action="second.html">
+  <div class="form-field" >
+    <input type="email" id="emailTest" placeholder="Email / Username" required/>
+  </div>
+  
+  <div class="form-field" >
+    <input type="password" id="passwordTest" placeholder="Password" required/>                         </div>
+  
+  <div class="form-field">
+    <a href="second.html"><button class="btn" id="submit" type="submit">Log in</button></a>
+    
+  </div>
+</form>
+<!-- partial -->
+  
+</body>
+</html>
